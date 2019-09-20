@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soal 06</title>
+</head>
+
+<body>
+    <script>
+        let input1 = prompt("Silahkan Input angka pertama: ", "");
+        let input2 = prompt("Silahkan Input angka kedua: ", "");
+
+        const range = (input1, input2) => {
+            const ans = [];
+            for (let i = input1; i <= input2; i++) {
+                ans.push(i);
+            }
+            return ans;
+        };
+
+        document.write("[" + range(input1, input2) + "]");
+    </script>
+</body>
+
+</html>

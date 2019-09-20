@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soal 07</title>
+    <script>
+        function bilanganGanjil() {
+            let angka1 = document.getElementById("angka1").value;
+            let angka2 = document.getElementById("angka2").value;
+            let numGanjil = "<br>Nomor Ganjil : </br>";
+
+            for (i = angka1; i <= angka2; i++) {
+                if (i % 2 != 0) {
+                    numGanjil += "[" + i + " ]";
+                }
+            }
+            document.getElementById("hasil").innerHTML = numGanjil;
+        }
+    </script>
+</head>
+
+<body>
+    angka 1 : <input type="number" min="0" id="angka1" value="1" />
+    angka 2 : <input type="number" id="angka2" min="1" value="100" />
+    <input type="button" onclick="bilanganGanjil()" value="cetak bilangan ganjil" />
+    <div id="hasil"></div>
+
+</body>
+
+</html>

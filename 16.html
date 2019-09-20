@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soal 16</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Silahkan Input String: ", "");
+
+        const palindrome = (input) => {
+            let re = /[\W_]/g;
+            let lowRegstr = input.toLowerCase().replace(re, '');
+            let reverseStr = lowRegstr.split('').reverse().join('');
+            if (reverseStr === lowRegstr) {
+                document.write('Palindrome  ');
+            } else {
+                document.write('Bukan Palindrome  ');
+            }
+        }
+        document.write(palindrome(input));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soal 04</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Silahkan Input Tahun: ", "");
+        if (input % 4 === 0) {
+            if (input % 100 === 0) {
+                if (input % 400 === 0) {
+                    document.write("Kabisat");
+                } else {
+                    document.write("Bukan Kabisat");
+                }
+            } else {
+                document.write("Kabisat");
+            }
+        } else {
+            document.write("Bukan Kabisat");
+        }
+    </script>
+</body>
+
+</html>

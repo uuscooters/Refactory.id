@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soal 19</title>
+</head>
+
+<body>
+    <script>
+        let input = prompt("Silahkan Input Angka: ", "");
+
+        const nilai = function angka(input) {
+            if (input <= 1) {
+                return 1;
+            } else {
+                return input - angka(input - 1);
+            }
+
+        };
+
+        document.write(nilai(input, 1));
+    </script>
+</body>
+
+</html>
